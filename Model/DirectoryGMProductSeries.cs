@@ -22,7 +22,7 @@ namespace Model
         public virtual ProductSeries ProductSeries { get; set; }
 
         [Required]
-        private int ProductSeriesId { get; set; }
+        public int ProductSeriesId { get; set; }
 
         [Required]
         // Розничная цена
