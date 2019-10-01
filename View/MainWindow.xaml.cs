@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EisDatabase.Api;
+using EisModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,16 +15,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace View
+namespace EisView
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private readonly IChartOfAccountsRepository ChartOfAccountsRepository;
+
+        public MainWindow(IChartOfAccountsRepository chartOfAccountsRepository)
         {
             InitializeComponent();
+
+            ChartOfAccountsRepository = chartOfAccountsRepository;
         }
     }
 }

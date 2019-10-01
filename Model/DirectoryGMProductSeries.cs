@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace EisModel
 {
     // For relationship betweet DirectoryGM and ProductSeries
     public class DirectoryGMProductSeries

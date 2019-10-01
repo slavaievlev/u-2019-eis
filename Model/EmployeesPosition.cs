@@ -6,19 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace EisModel
 {
     // Должность
     public class EmployeesPosition
     {
         [Key]
-        private int Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        private string Name { get; set; }
+        public string Name { get; set; }
 
         [Required]
-        private int Salary { get; set; }
+        public int Salary { get; set; }
 
         [ForeignKey("EmployeePositionId")]
         public virtual List<Employee> Employees { get; set; }

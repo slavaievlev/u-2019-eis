@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace EisModel
 {
     // Журнал проводок
     public class JournalEntries
@@ -44,13 +44,11 @@ namespace Model
         // Счет дебита
         public virtual ChartOfAccounts DebitAccount { get; set; }
 
-        [Required]
-        public int DebitAccountId { get; set; }
+        public int? DebitAccountId { get; set; }
 
         // Счет кредита
         public virtual ChartOfAccounts CreditAccount { get; set; }
 
-        [Required]
-        public int CreditAccountId { get; set; }
+        public int? CreditAccountId { get; set; }
     }
 }

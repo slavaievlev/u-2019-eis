@@ -1,35 +1,36 @@
-﻿using Model;
+﻿using EisModel;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database
+namespace EisDatabase
 {
     public class EisDbContext : DbContext
     {
         public EisDbContext() : base("EisDbContext") { }
 
-        public DbSet<ChartOfAccounts> ChartOfAccounts{ get; set; }
+        public virtual DbSet<ChartOfAccounts> ChartOfAccounts{ get; set; }
 
-        public DbSet<DirectoryGM> DirectoryGMs { get; set; }
+        public virtual DbSet<DirectoryGM> DirectoryGMs { get; set; }
 
-        public DbSet<DirectoryGMProductSeries> DirectoryGMProductSeries { get; set; }
+        public virtual DbSet<DirectoryGMProductSeries> DirectoryGMProductSeries { get; set; }
 
-        public DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
 
-        public DbSet<EmployeesPosition> EmployeesPositions { get; set; }
+        public virtual DbSet<EmployeesPosition> EmployeesPositions { get; set; }
 
-        public DbSet<JournalEntries> JournalEntries { get; set; }
+        public virtual DbSet<JournalEntries> JournalEntries { get; set; }
 
-        public DbSet<JournalOperations> JournalOperations { get; set; }
+        public virtual DbSet<JournalOperations> JournalOperations { get; set; }
 
-        public DbSet<ProductSeries> ProductSeries { get; set; }
+        public virtual DbSet<ProductSeries> ProductSeries { get; set; }
 
-        public DbSet<Provider> Providers { get; set; }
+        public virtual DbSet<Provider> Providers { get; set; }
 
-        public DbSet<Subdivision> Subdivisions { get; set; }
+        public virtual DbSet<Subdivision> Subdivisions { get; set; }
     }
 }

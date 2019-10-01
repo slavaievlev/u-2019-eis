@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{79478730-6399-42B9-8198-B8031D6E082F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EisView", "View\EisView.csproj", "{79478730-6399-42B9-8198-B8031D6E082F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{4254F81E-5596-48A9-A868-CD5333F97480}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EisModel", "Model\EisModel.csproj", "{4254F81E-5596-48A9-A868-CD5333F97480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{7153C9FD-314B-4AC0-A65F-8B62ABF0722A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EisDatabase", "Database\EisDatabase.csproj", "{7153C9FD-314B-4AC0-A65F-8B62ABF0722A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{15CF8014-A852-439D-A267-189E88223B6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EisService", "Service\EisService.csproj", "{15CF8014-A852-439D-A267-189E88223B6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
