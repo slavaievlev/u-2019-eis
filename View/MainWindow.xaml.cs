@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Unity;
 
 namespace EisView
 {
@@ -22,13 +23,22 @@ namespace EisView
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly IChartOfAccountsRepository ChartOfAccountsRepository;
+        [Dependency]
+        public IUnityContainer Container { get; set; }
 
-        public MainWindow(IChartOfAccountsRepository chartOfAccountsRepository)
+        public MainWindow()
         {
             InitializeComponent();
+        }
 
-            ChartOfAccountsRepository = chartOfAccountsRepository;
+        private void ChartOfAccountsButton_Click(object sender, RoutedEventArgs e)
+        {
+            ChartOfAccountsWindow window = Container.Resolve<ChartOfAccountsWindow>();
+            window.LoadDataGrid();
+            window.Owner = this;
+            window.ShowDialog();
+
+            // Не закрываем main окно при открытии других окон.
         }
     }
 }

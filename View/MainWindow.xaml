@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EisView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="820">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" Margin="10,10,613.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="170" TextAlignment="Center"><Run Text="Справочники" FontSize="18"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="214,10,409.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="170" TextAlignment="Center"><Run Text="Операции" FontSize="18"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="415,10,208.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="170" TextAlignment="Center"><Run Text="Отчеты" FontSize="18"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="614,10,9.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="170" TextAlignment="Center"><Run Text="Сервис" FontSize="18"/></TextBlock>
+        <Button Name="chartOfAccountsButton" Content="План счетов" Margin="10,43,613.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32" Click="ChartOfAccountsButton_Click"/>
+        <Button Content="Button" Margin="10,80,613.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="10,117,613.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="214,43,409.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="214,80,409.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="214,117,409.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="415,43,208.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="415,80,208.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="614,43,9.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="614,80,9.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="614,117,9.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+        <Button Content="Button" Margin="614,154,9.6,0" VerticalAlignment="Top" Width="170" HorizontalAlignment="Center" IsDefault="True" Background="#FFF4F4F4" FontSize="14" Height="32"/>
+
     </Grid>
 </Window>
